@@ -24,7 +24,7 @@ function send() {
     return;
   }
 
-  if (value.startsWith('learn')) {
+  if (value.toLowerCase().startsWith('learn')) {
     const replaceLearn = value.replace('learn', '');
     const splitMessage = replaceLearn.split('/');
 
