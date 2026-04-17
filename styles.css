@@ -1,0 +1,148 @@
+body{
+  background: linear-gradient(to bottom right, rgb(43, 43, 43), rgb(139, 139, 139));
+  min-height: 100vh;
+  font-family: arial;
+  font-weight: bold;
+}
+
+
+li{
+  font-size: 25px;
+}
+
+
+.messageInput{
+  position: fixed;
+  bottom: 20px;
+  right: 30%;
+  left: 30%;
+  height: 50px;
+  padding: 4px 2px;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: rgb(189, 189, 189);
+}
+
+
+.sendMessageButton{
+  position: fixed;
+  bottom: 25px;
+  right: 30.3%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-color: rgb(115, 117, 143);
+  font-weight: 900;
+  cursor: pointer;
+}
+.sendMessageButton:hover{
+  filter: brightness(85%);
+}
+.sendMessageButton:active{
+  filter: brightness(75%);
+}
+
+
+.messagesDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.messages{
+  position: relative;
+  padding: 25px 25px;
+  width: 400px;
+  font-size: 20px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+
+.sentMessage{
+  background-color: rgb(173, 173, 173);
+  border-radius: 20px 3px 20px 20px;
+  align-self: flex-end;
+}
+
+
+.receivedMessage{
+  background-color: rgb(61, 61, 61);
+  border-radius: 3px 20px 20px 20px;
+  align-self: flex-start;
+}
+
+
+.helpButton{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: rgb(37, 37, 37);
+  font-weight: 900;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+.helpButton:hover{
+  filter: brightness(85%);
+}
+.helpButton:active{
+  filter: brightness(75%);
+}
+
+
+.on{
+  background: linear-gradient(to bottom right, rgb(99, 99, 99), rgb(88, 88, 88));
+  width:  50%;
+  min-width: 500px;
+  height: 600px;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+  z-index: 999999;
+}
+
+.helpMenu{
+  font-weight: 900;
+  font-family: arial;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.tip{
+  font-size: 20px;
+}
+
+
+.deleteData{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  border: none;
+  font-weight: 900;
+  color: white;
+  background-color: rgb(43, 43, 43);
+  cursor: pointer;
+}
+.deleteData:hover{
+  filter: brightness(85%);
+}
+.deleteData:active{
+  filter: brightness(75%);
+}
+
+.bin{
+  margin: 0;
+  font-size: 30px;
+}
