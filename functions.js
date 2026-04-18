@@ -25,7 +25,14 @@ function send() {
   }
 
   if (value.toLowerCase().startsWith('learn')) {
-    const replaceLearn = value.replace('learn', '');
+    let replaceLearn = '';
+
+    if (value.startsWith('learn')) {
+      replaceLearn = value.replace('learn', '');
+    } else if (value.startsWith('Learn')) {
+      replaceLearn = value.replace('Learn', '');
+    }
+
     const splitMessage = replaceLearn.split('/');
 
     if (!customAnswers[splitMessage[0]]) {
@@ -56,7 +63,6 @@ function send() {
   renderMessages();
   messageInput.value = '';
 }
-
 
 
 function renderMessages() {
